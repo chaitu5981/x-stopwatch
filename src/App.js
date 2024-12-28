@@ -25,7 +25,7 @@ const App = () => {
   return (
     <div>
       <h1>Stopwatch</h1>
-      <p>Time : {format(secs)}</p>
+      <p>Time: {format(secs)}</p>
       {show ? (
         <button onClick={start}>Start</button>
       ) : (
