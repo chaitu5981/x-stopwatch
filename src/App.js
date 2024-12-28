@@ -31,7 +31,14 @@ const App = () => {
       ) : (
         <button onClick={stop}>Stop</button>
       )}
-      <button onClick={() => setSecs(0)}>Reset</button>
+      <button
+        onClick={() => {
+          stop();
+          setSecs(0);
+        }}
+      >
+        Reset
+      </button>
     </div>
   );
 };
